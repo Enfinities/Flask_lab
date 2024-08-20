@@ -1,2 +1,3 @@
 #list of dependencies needed to run.
 flask
+gunicorn
