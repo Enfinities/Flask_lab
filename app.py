@@ -21,7 +21,7 @@ def home():
             if myboard[row][col] == 0:
                 myboard[row][col] = current_player
                 toggle_player()
-    return render_template('TTT.html', board=myboard, current_turn=current_player, enumerate=enumerate)
+    return render_template('index.html', board=myboard, current_turn=current_player, enumerate=enumerate)
 
 @app.route('/restart', methods=['POST'])
 def restart():
